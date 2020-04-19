@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "promise": "^7.1.1",
+    "request": "^2.79.0"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "payment",
+    "API",
+    "naira",
+    "paystack"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js --reporter spec --timeout 8000"
+  },
+  "version": "2.0.1"
+}

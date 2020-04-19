@@ -1,0 +1,40 @@
+{
+  "name": "mijanta",
+  "version": "1.0.0",
+  "description": "This project is MiJanta API mock-up",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "payments",
+    "paystack",
+    "mijanta",
+    "tyondo"
+  ],
+  "author": "Raphael Ndwiga",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "promise": "^8.1.0",
+    "request": "^2.88.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^7.1.1"
+  }
+}
