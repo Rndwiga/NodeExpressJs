@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const helmet = require('helmet')
 const compression = require('compression')
-const userRoutes = require('./api/users/users.controller');
+ const userRoutes = require('./api/users/users.controller');
 
 
 app.use(cors());
@@ -14,7 +14,7 @@ app.use(compression())
 app.use(helmet())
     app.disable('x-powered-by')
 
-mongoose.connect(process.env.atlas, {
+/* mongoose.connect(process.env.atlas, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -22,7 +22,7 @@ mongoose.connect(process.env.atlas, {
 .then(() => console.log('DB Connected!'))
 .catch(err => {
     console.log(Error, err.message);
-});
+}); */
 
 
 app.use(morgan('dev'));

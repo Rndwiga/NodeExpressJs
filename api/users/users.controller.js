@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
 const Promise = require('promise');
 const fs = require('fs').promises;
 const TransferObject = require("./users.object");
-const paystack = require('../../paystack_sdk/index')(process.env.PAYSTACK_SECRET_KEY);
 const checkAuth = require('../middleware/check-auth');
 
 log('boothing %o', debugName)
