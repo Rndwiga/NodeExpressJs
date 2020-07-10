@@ -21,5 +21,12 @@ The application is closely modeled around NodeJs functionality with the packages
 in terms of logging, security, and reporting. In addition to this, there is custom SDKs that are production ready will be added with time as the project grows.
 
 ### How-to
-To understand how to configure the application, kindly look at each of the included package documentation. What is given here is just but start-up to make it easy to
-prototype and build production ready application within the shortest time possible.
+To understand how to configure the application, kindly look at each of the included package documentation. What is given here is just but start-up to make it easy to prototype and build production ready application within the shortest time possible.
+
+### AOB
+
+#### To activate pagination, attach the appropriate methods provided
+/api/users?page=1&size=5
+/api/users?size=5: using default value for page
+/api/users?first_name=data&page=1&size=3: pagination & filter by first_name containing ‘data’
+/api/users/active?page=2: pagination & filter by ‘active’ status
