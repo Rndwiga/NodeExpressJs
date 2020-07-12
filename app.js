@@ -25,12 +25,14 @@ app.use(helmet())
 }); */
 
   try {
-     db.sequelize.sync();
-    /*  db.sequelize.sync({ force: true }).then(() => {
+      //Enable sequelize sync when you need to recreate the tables
+      /* db.sequelize.sync({ force: true }).then(()=>{
         console.log("Drop and re-sync db.");
-      }); */
-     // db.initializeRoles();
-
+        db.initializeRoles();
+      });
+ */
+      db.sequelize.authenticate();
+      
     console.log('Connection has been established successfully.');
   } catch (error) {
     console.error('Unable to connect to the database:', error);
@@ -43,6 +45,7 @@ app.use(bodyParser.json());
 
 //-ROUTES
 require("./routes/user.routes")(app);
+require("./routes/authentication.routes")(app);
 
 // Default route
 app.use((req, res, next) => {

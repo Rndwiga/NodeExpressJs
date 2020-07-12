@@ -45,8 +45,8 @@ exports.create = (req, res) => {
     is_active: req.body.is_active ? req.body.is_active : false
   };
 
-  // Save Tutorial in the database
-  Tutorial.create(tutorial)
+  // Save User in the database
+  userModel.create(tutorial)
     .then(data => {
       res.status(200).send(data);
     })
@@ -74,7 +74,6 @@ exports.findAll = (req, res) => {
         });
       });
 };
-
 
 // Find a single User with an id
 exports.findOne = (req, res) => {

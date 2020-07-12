@@ -38,9 +38,7 @@ db.ROLES = ["user", "admin", "root"];
 
 db.initializeRoles = function(){
   db.ROLES.forEach((item, index)=>{
-    console.log(item);
       db.roleModel.create({
-        id: 1,
         name: item
       });
   })
