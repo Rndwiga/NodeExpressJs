@@ -34,7 +34,7 @@ db.userModel.belongsToMany(db.roleModel, {
   otherKey: "roleId"
 });
 
-db.ROLES = ["user", "admin", "root"];
+db.ROLES = ["retailer", "supplier", "manufacturer","admin","root"];
 
 db.initializeRoles = function(){
   db.ROLES.forEach((item, index)=>{

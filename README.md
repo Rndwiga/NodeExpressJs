@@ -15,6 +15,7 @@ This is a broiler plate for anyone who wants to get started in building API cent
 * jsonwebtoken
 * bcryptjs
 * dotenv
+* faker
 
 ### Features
 The application is closely modeled around NodeJs functionality with the packages highlghted above being required to secure and make the application more robust
